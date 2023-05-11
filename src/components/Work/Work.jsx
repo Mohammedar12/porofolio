@@ -61,12 +61,12 @@ function Work() {
       </div>
       <Box style={{width: "clamp(300px , 100% , 1000px)"}} >
         <ImageList variant="masonry" cols={3} gap={8}>
-          {itemData.map((item) => (
+          {itemData.map((item , i) => (
             <>
               <ImageListItem key={item.img} 
                data-aos="fade-up"
                data-aos-duration="800"
-               data-aos-delay="100">
+               data-aos-delay={100}>
                 <div className="theme_container" >
                   <img
                   style={{width : "100%"}}
@@ -75,7 +75,7 @@ function Work() {
                     alt={item.title}
                     loading="lazy"
                   />
-                  <a href={item.link} target="_blank" rel="noreferrer">View</a>
+                  <a href={item.link} target="_blank" rel="noreferrer">{t("View")}</a>
                 </div>
               </ImageListItem>
             </>
