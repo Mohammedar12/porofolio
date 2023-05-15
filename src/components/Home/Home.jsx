@@ -23,7 +23,7 @@ function Home({downloadImage , setDownloadMode , index}) {
     <>
       {/*  Home Banner */}
       <section id={ i18n.language === "ar" ? "الرئيسية" : "Home"} className="home-banner"
-        style={{background: `url(${sliderContent.banner})` }}
+        style={{backgroundImage: `url(${sliderContent.banner})` }}
       >
         {/* End hp-top-fixed */}
 
@@ -34,7 +34,7 @@ function Home({downloadImage , setDownloadMode , index}) {
                 <h6 data-aos="fade-up" data-aos-duration="1200">
                  { t("Hello_My_name_is")}
                 </h6>
-                <h1 className="font-alt">{ i18n.language === "ar" ? sliderContent.name_ar : sliderContent.name}</h1>
+                <h1 >{ i18n.language === "ar" ? sliderContent.name_ar : sliderContent.name}</h1>
                 <div>
                   <p className="loop-text lead">
                     <TextTransition
