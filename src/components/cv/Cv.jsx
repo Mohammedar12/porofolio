@@ -17,7 +17,7 @@ function Cv({index}) {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src={about} alt="about" />
+                  <img src={CV.profileImg} alt="about" />
                 </div>
               </div>
               {/* End img */}

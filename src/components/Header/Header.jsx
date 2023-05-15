@@ -6,6 +6,10 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 
+
+// وضع مكانه اسم شعارك الخاص مع صيغة الصورة man.png لتغير الشعار فقط احذف 
+import logo from "../../assets/profile.png" 
+
 import "./Header.css";
 
 const pages = {
@@ -23,7 +27,7 @@ function Header({ changeLanguage }) {
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
     >
       <Container>
-        <Navbar.Brand href="#Home">Portofolio</Navbar.Brand>
+        <Navbar.Brand href="#Home"> <img src={logo} alt="" width={50} /> </Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -52,15 +56,6 @@ function Header({ changeLanguage }) {
                 </Button>
               </Dropdown.Menu>
             </Dropdown>
-
-            {/* <div className="lang">
-              <button className="en" onClick={changeLanguage} value="en">
-                English
-              </button>
-              <button className="ar" onClick={changeLanguage} value="ar">
-                Arab
-              </button>
-            </div> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

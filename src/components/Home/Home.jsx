@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import TextTransition, { presets } from "react-text-transition";
 import { sliderContent , jobs} from "../../data/data";
 import { useTranslation } from 'react-i18next';
+
 
 function Home({downloadImage , setDownloadMode , index}) {
  
@@ -21,7 +22,9 @@ function Home({downloadImage , setDownloadMode , index}) {
   return (
     <>
       {/*  Home Banner */}
-      <section id={ i18n.language === "ar" ? "الرئيسية" : "Home"} className="home-banner">
+      <section id={ i18n.language === "ar" ? "الرئيسية" : "Home"} className="home-banner"
+        style={{background: `url(${sliderContent.banner})` }}
+      >
         {/* End hp-top-fixed */}
 
         <div className="container">
@@ -52,7 +55,7 @@ function Home({downloadImage , setDownloadMode , index}) {
                   >
                     {i18n.language === "ar" ? sliderContent.btnText_ar : sliderContent.btnText}
                   </a>
-                  <a className="px-btn btn-outline" href="#work">
+                  <a className="px-btn btn-outline" href={i18n.language === "ar" ? "#اعمالي" : "#Work" }>
                     {i18n.language === "ar" ? sliderContent.btnText2_ar : sliderContent.btnText2}
                   </a>
                 </div>
@@ -61,12 +64,7 @@ function Home({downloadImage , setDownloadMode , index}) {
           </div>
         </div>
         {/* End Container*/}
-        {/* <div className="hb-me">
-          <img
-            src={img}
-            alt="img"
-          />
-        </div> */}
+ 
       </section>
 
       {/* End Home Banner  */}

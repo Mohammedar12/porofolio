@@ -7,7 +7,7 @@ import about from '../../assets/about-me-2.jpg'
 import border from '../../assets/border.png'
 import TextTransition, { presets } from "react-text-transition";
 import { useTranslation } from 'react-i18next';
-import { jobss , CV} from "../../data/data";
+import { jobs , CV} from "../../data/data";
 
 function About({index}) {
 
@@ -24,7 +24,7 @@ function About({index}) {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src={about} alt="about" />
+                  <img src={CV.profileImg} alt="about" />
                 </div>
               </div>
               {/* End img */}
@@ -34,7 +34,7 @@ function About({index}) {
                     springConfig={presets.stiff}
                     className="justify-content-center"
                   >
-                    {jobss[index % jobss.length]}
+                    {jobs.jobs[index % jobs.jobs.length]}
                   </TextTransition>
                 </p>
                 <h3  className='text-light'>{i18n.language === "ar" ? CV.name_ar : CV.name}</h3>

@@ -4,51 +4,76 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
+
+
+//  من هنا تقدر تضيف صور المشاريع جديدة للموقع
+
+//  اذا حاب تضيف صورة جديدة انسخ الكلام يلي تحت وغير اسم الصورة فقط 
+//  import imageName from "../../assets/imageName.png"
+
+import work1 from "../../assets/work1.jpg"
+import work2 from "../../assets/work2.jpg"
+import work3 from "../../assets/work3.jpg"
+
+import work4 from "../../assets/work4.jpg"
+import work5 from "../../assets/work5.jpg"
+import work6 from "../../assets/work6.jpg"
+
+import work7 from "../../assets/work7.jpg"
+import work8 from "../../assets/work8.jpg"
+import work9 from "../../assets/work9.jpg"
+
+
+// من هنا تقدر تظهر صور المشاريع جديدة
+// من هنا تقدر تضيف روابط المشاريع جديدة
+
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-    link: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-    title: "Bed",
+    // اسم الصورة المختصر 
+    img: work1,
+
+    // رابط المشروع
+    link: "https://img.freepik.com/free-psd/3d-pink-scene-with-cell-phone-floating-coffee-table-editable-color_167960-48.jpg?size=626&ext=jpg&ga=GA1.2.129611774.1671055852&semt", 
   },
+
   {
-    img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    link: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    title: "Books",
+    img: work9,
+    link: "https://img.freepik.com/free-photo/marketing-creative-collage-with-phone_23-2149379900.jpg?w=996&t=st=1684156777~exp=1684157377~hmac=7020b71555a7216edbe037c67fcb73fa6eb3a953870f2c4c165ae53531918d12",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    link: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    title: "Sink",
+    img: work2,
+    link: "https://img.freepik.com/free-vector/abstract-landing-page-with-technology-devices_23-2148113790.jpg?w=740&t=st=1684155427~exp=1684156027~hmac=6e1d633ed47e680220c377734d8a9541e98eda749ab22ee78323cb1f3eb35cbe",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-    link: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-    title: "Kitchen",
+    img: work3,
+    link: "https://img.freepik.com/free-vector/courier-riding-bike-checking-address-phone-woman-delivering-order-using-cell-with-map-flat-vector-illustration-delivery-service-concept-banner-website-design-landing-web-page_74855-12153.jpg?size=626&ext=jpg&ga=GA1.1.129611774.1671055852&semt=sph",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-    link: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-    title: "Blinds",
+    img: work4,
+    link: "https://img.freepik.com/free-vector/furniture-shopping-app-interface_23-2148660330.jpg?w=1380&t=st=1684155672~exp=1684156272~hmac=4307c1af4813a7853331850dd4808fb99547c49313ab3b97ab8b64c8bf14bcb0",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-    link: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-    title: "Chairs",
+    img: work5,
+    link: "https://img.freepik.com/free-vector/various-screens-violet-public-transport-mobile-app_23-2148704862.jpg?w=1380&t=st=1684154668~exp=1684155268~hmac=fc334dd36f38e21365480af0a9a39a86025635e059e32d91e23a9df35850b358",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    link: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
+    img: work6,
+    link: "https://img.freepik.com/free-vector/travel-booking-app-concept_52683-41900.jpg?w=1380&t=st=1684155997~exp=1684156597~hmac=3aead2b9bfdc1e3dbaec7c377a1f42ccfe0185d7e19934cfac2490bf09914e25",
   },
+
   {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    link: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
+    img: work7,
+    link: "https://img.freepik.com/free-vector/guy-moving-clock-hands-man-stopping-time-flat-vector-illustration_74855-11112.jpg?w=740&t=st=1684156175~exp=1684156775~hmac=e5276e8ccf37e049384ef1689e452e8bdb6172a08289940cfdce86ad3cb92aee",
   },
+  
   {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    link: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
+    img: work8,
+    link: "https://img.freepik.com/free-psd/full-screen-smartphone-mockup-design_53876-65968.jpg?w=740&t=st=1684156691~exp=1684157291~hmac=bdaf1511696775ae394e00b0fd9c66791d152737f3a0e657b211278ced0b6168",
   },
 ];
 
