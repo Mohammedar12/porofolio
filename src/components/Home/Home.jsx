@@ -44,9 +44,7 @@ function Home({downloadImage , setDownloadMode , index}) {
                       {18n.language === "ar" ? jobs.jobs_ar[index % jobs.jobs_ar.length] :jobs.jobs[index % jobs.jobs.length] }
                     </TextTransition>
                   </p>
-                
                 </div>
-
                 <p className="desc">{i18n.language === "ar" ? sliderContent.description_ar : sliderContent.description}</p>
                 <div className="mt-4 d-flex btn-wrapper gap-2  justify-content-center">
                   <a

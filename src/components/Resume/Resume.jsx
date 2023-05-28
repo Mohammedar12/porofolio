@@ -1,22 +1,22 @@
 import React from "react";
 import Skills from "../Skills/Skills";
+import img from '../../assets/Programming-rafiki.png'
 
 import { resumeContent , educatonContent} from "../../data/data";
 import { useTranslation } from 'react-i18next';
-
 
 const Resume = () => {
   const { t ,i18n } = useTranslation();
   return (
     <>
-      <section  id={ i18n.language === "ar" ? "الخبرات" : "Resume"} className="section">
+      <section  id={ i18n.language === "ar" ? "المهارات" : "Skills"} className="section">
         <div className="container">
-          <div className="title">
+          {/* <div className="title">
             <h3>{t("Experience")}</h3>
             
-          </div>
+          </div> */}
           {/* End title */}
-          <div className="resume-box" dir={i18n.language === "ar" ? "rtl" : "ltr"}> 
+          {/* <div className="resume-box" dir={i18n.language === "ar" ? "rtl" : "ltr"}> 
             {resumeContent.map((val, i) => (
               <div
                 className="resume-row"
@@ -43,38 +43,39 @@ const Resume = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* separated */}
-          <div
+          {/* <div
             className="separated"
             style={{
               backgroundImage: `url(${
                 process.env.PUBLIC_URL + "img/border-dark.png"
               })`,
             }}
-          ></div>
+          ></div> */}
           {/* End separated */}
 
           <div className="title">
             <h3>{t("Education_&_Skills")}</h3>{" "}
           </div>
 
-          <div className="row align-items-center" dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+          <div className="row align-items-center " dir={i18n.language === "ar" ? "rtl" : "ltr"}>
             <div
-              className="col-lg-4 m-15px-tb"
+              className="col-lg-4 m-15px-tb skill-image"
               data-aos="fade-up"
               data-aos-duration="1200"
               dir={i18n.language === "ar" ? "rtl" : "ltr"}
             >
               <ul className="aducation-box">
-                {educatonContent.map((val, i) => (
+                {/* {educatonContent.map((val, i) => (
                   <li key={i}>
                     <span>{val.passingYear}</span>
                     <h6>{i18n.language === "ar" ? val.degreeTitle_ar : val.degreeTitle} </h6>
                     <p>{i18n.language === "ar" ?  val.instituteName_ar : val.instituteName}</p>{" "}
                   </li>
-                ))}
+                ))} */}
+                <img src={img} alt="" />
               </ul>
             </div>
             {/* End .col */}

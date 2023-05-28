@@ -32,7 +32,8 @@
     "rsuite": "^5.32.0",
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.10.0"
   },
   "scripts": {
     "start": "react-scripts start",

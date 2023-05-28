@@ -683,6 +683,14 @@
     }
   }
 }
+
+.skill-image {
+  @media (min-width: 990px) {
+    flex: 1;
+  }
+}
+
+
 .aducation-box {
   margin: 0;
   padding: 35px;
@@ -692,6 +700,7 @@
   color: $px-dark;
   @include down-md {
     margin-bottom: 10px;
+    
   }
   p {
     margin: 0;

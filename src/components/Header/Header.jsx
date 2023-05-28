@@ -13,8 +13,8 @@ import logo from "../../assets/profile.png"
 import "./Header.css";
 
 const pages = {
-  page: ["Home ", "About me", "Resume", "Work", "Contact"] , 
-  page_ar: ["الرئيسية ", "نبذة عني", "الخبرات", "اعمالي", "التواصل"],
+  page: ["Home ", "About me", "Skills", "Work", "Contact"] , 
+  page_ar: ["الرئيسية ", "نبذة عني", "المهارات", "اعمالي", "التواصل"],
 };
 
 function Header({ changeLanguage }) {
@@ -27,7 +27,7 @@ function Header({ changeLanguage }) {
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
     >
       <Container>
-        <Navbar.Brand href="#Home"> <img src={logo} alt="" width={50} /> </Navbar.Brand> 
+        <Navbar.Brand href="#Home"> <img src={logo} alt="" width={70} /> </Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

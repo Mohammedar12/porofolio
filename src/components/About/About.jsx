@@ -120,18 +120,18 @@ function About({index}) {
           <Service />
           {/* End .row */}
            {/* separated */}
-           <div
+           {/* <div
             className="separated"
             style={{
               backgroundImage: `url(${border})`,
             }}
-          ></div>
+          ></div> */}
           {/* End separated */}
 
-          <div className="title">
+          {/* <div className="title">
             <h3>{t("Awards")}</h3>
           </div>
-          <Awards />
+          <Awards /> */}
           {/* End Awards */}
 
           {/* separated */}

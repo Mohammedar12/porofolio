@@ -1,63 +1,52 @@
 // -----  Top Banner -----------
 
-import banner from "../assets/banner_2.jpg" // هنا تغير البنر الرئيسي
+import banner from "../assets/banner_2.jpg"; // هنا تغير البنر الرئيسي
 
 // -----  About Images  -----------
 
-import AboutImage from '../assets/about-me-2.jpg' // هنا تغير صورة السيرة الثاتية
-
+import AboutImage from "../assets/Programming-amico.png"; // هنا تغير صورة السيرة الثاتية
 
 // -----  Testimonil Images -----------
 
 // --------------------  الصورة 1
-import TestimonilImg1 from "../assets/a1.png"; // هنا تغير صورة التوصيات اذا ودك
+import TestimonilImg1 from "../assets/profile.png"; // هنا تغير صورة التوصيات اذا ودك
 
 // --------------------  الصورة 2
-import TestimonilImg2 from "../assets/a2.png"; // هنا تغير صورة التوصيات اذا ودك
+import TestimonilImg2 from "../assets/profile.png"; // هنا تغير صورة التوصيات اذا ودك
 
 // الصورة --------------------  3
-import TestimonilImg3 from "../assets/a3.png"; // هنا تغير صورة التوصيات اذا ودك 
-
-
+import TestimonilImg3 from "../assets/profile.png"; // هنا تغير صورة التوصيات اذا ودك
 
 // -----  Award Images -----------
 
 // --------------------  الصورة 1
-import  AwardImg1 from "../assets/a1.png"; // هنا تغير صورة الجوائز اذا ودك
+import AwardImg1 from "../assets/a1.png"; // هنا تغير صورة الجوائز اذا ودك
 
 // الصورة --------------------  2
-import  AwardImg2 from "../assets/a2.png"; // هنا تغير صورة الجوائز اذا ودك
+import AwardImg2 from "../assets/a2.png"; // هنا تغير صورة الجوائز اذا ودك
 
 // --------------------  الصورة 3
-import  AwardImg3 from "../assets/a3.png"; // هنا تغير صورة الجوائز اذا ودك
-
-
+import AwardImg3 from "../assets/a3.png"; // هنا تغير صورة الجوائز اذا ودك
 
 // |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-||-|-|-|-|-|-|-|-||-|-|-|-|-|-|-|-||-|-|-|-|-|-|-|-||-|-|-|-|-|-|-|-||-|-|-|-|-|-|-|-|
-
 
 // ----------------- Home ----------------- //
 // ----------------- Home محتوى القسم الاول  ----------------- //
 
 export const sliderContent = {
-  banner : banner,
-  name: "Sara Mohamed",
-  name_ar: "سارة محمد",
-  description: `I design and develop services for customers of all sizes,
-    specializing in creating stylish, modern websites, web
-    services and online stores.`,
-  description_ar: `أقوم بتصميم وتطوير الخدمات للعملاء من جميع الأحجام.
-  متخصصون في إنشاء مواقع ويب أنيقة وعصرية
-  الخدمات والمتاجر عبر الإنترنت`,
-  btnText: " Donwload CV",
+  banner: banner,
+  name: "Ali Mohamed",
+  name_ar: "علي محمد",
+  description: `Are you in need of a skilled web developer and UI/UX designer? Look no further! I'm here to help. I am a freelancer specializing in turning ideas into amazing web applications and creating stunning user experiences.`,
+  description_ar: `هل تبحث عن خبير في تطوير الويب وتصميم واجهات المستخدم؟ أنا هنا لمساعدتك! أنا فريلانسر متخصص في تحويل الأفكار إلى تطبيقات ويب رائعة وتجارب مستخدم مذهلة.`,
+  btnText: "Donwload CV",
   btnText_ar: " تحميل الـCV ",
   btnText2: " My Work",
   btnText2_ar: " اعمالي",
 };
 
-
 export const jobs = {
-  jobs: ["Full-stack Developer ", "UI/UX Designer", " App Developer"]
+  jobs: ["UI/UX Designer", " Web Developer"],
 };
 
 // ----------------- End Home ----------------- //
@@ -69,115 +58,114 @@ export const jobs = {
 // ----------------- About > CV محتوى القسم الثاني  ----------------- //
 
 export const CV = {
-  profileImg : AboutImage,
-  name: "Sara Mohamed",
-  name_ar: "سارة محمد",
+  profileImg: AboutImage,
+  name: "Ali Mohamed",
+  name_ar: "علي محمد",
   description_1: `
-  I'm a Freelancer
-   Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.`,
+  With my extensive experience as a web developer, I can build sophisticated and responsive websites and web applications using technologies such as HTML, CSS, JavaScript, and popular frameworks like ReactJS and Angular. I will work closely with you to understand your digital needs and goals, ensuring efficient and responsive implementation.
+
+Additionally, as a UI/UX designer, I will ensure that the user experience of your website or application is seamless and delightful. I will create attractive and user-friendly interfaces that engage users effectively and enhance their overall experience`,
   description_1_ar: `
-  أنا فريلانسر مطور الواجهة الأمامية مع أكثر من 3 سنوات من الخبرة. انا من سان فرانسيسكو. أقوم بتشفير وإنشاء عناصر ويب لأشخاص رائعين حول العالم. أنا أحب العمل مع أشخاص جدد. أشخاص جدد تجارب جديدة.`,
+  بفضل خبرتي الواسعة كمطوّر ويب، يمكنني بناء مواقع وتطبيقات ويب متطورة باستخدام تقنيات مثل HTML، CSS، JavaScript وإطار العمل الشهير  ReactJS . سأعمل معك لفهم احتياجاتك وأهدافك الرقمية، وسأضمن تنفيذها بطريقة فعّالة ومتجاوبة.
+  وبفضل مهاراتي كمصمم واجهات المستخدم وتجربة المستخدم، سأضمن أن تكون تجربة المستخدم الخاصة بموقعك أو تطبيقك سلسة ومبهجة. سأعمل على تصميم واجهات مستخدم جذابة وسهلة الاستخدام تضمن تفاعل المستخدم مع المحتوى بشكل فعّال وتعزز تجربته  `,
   description_2: `
-  I'm a Freelancer
-  Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.`,
+  I will also enhance user interaction and experience through graphic design, animation, and content layout. You will have a unique and visually captivating interface that sets you apart from competitors and attracts users.
+
+Whether you need to create a new website, update the design of an existing site, or improve the user experience of your current application, I am here to serve you. Contact me now to discuss your project and let's bring your digital vision to life, providing an exceptional user experience.`,
   description_2_ar: `
-  أنا فريلانسر مطور الواجهة الأمامية مع أكثر من 3 سنوات من الخبرة. انا من سان فرانسيسكو. أقوم بتشفير وإنشاء عناصر ويب لأشخاص رائعين حول العالم. أنا أحب العمل مع أشخاص جدد. أشخاص جدد تجارب جديدة.`,
-  birthday: "4th April 1994",
-  birthday_ar: "4th April 1994",
-  age: "26 years",
-  age_ar: "26 سنة",
+  أيضًا، سأعمل على تحسين تجربة المستخدم وتجربة التفاعل من خلال تصميم الرسومات والصور المتحركة وتنسيق المحتوى. ستكون لديك واجهة فريدة وملفتة للنظر ستميزك عن المنافسين وتجذب المستخدمين.
+  سواء كنت تحتاج إلى إنشاء موقع ويب جديد، تحديث تصميم موقع حالي، أو تحسين تجربة المستخدم لتطبيقك الحالي، أنا هنا لخدمتك. اتصل بي الآن لمناقشة مشروعك واستعراض الأفكار والخطط الخاصة بك. سوف نعمل معًا على تحقيق رؤيتك الرقمية وتوفير تجربة استثنائية للمستخدمين.  `,
+  birthday: "4th April 1997",
+  birthday_ar: "4th April 1997",
+  age: "24 years",
+  age_ar: "24 سنة",
   address: "KSA Jeddah",
   address_ar: "السعودية , جدة",
-  phone: "+966 510310291",
-  email: "info@domainname.com",
+  phone: "+966 502773031",
+  email: "aliidevss@gmail.com",
   freelance: "Available",
   freelance_ar: "متاح للعمل",
 };
 
 // ----------------- End CV ----------------- //
 
-
-
 // ----------------- ServiceContent ----------------- //
 // ----------------- About > Service محتوى القسم الثاني  ----------------- //
 
-export const ServiceContent = [ 
-  
+export const ServiceContent = [
   // خدمة 1
   {
     icon: "icon-mobile",
     title: "Web Development ",
     title_ar: "مطور مواقع",
-    descriptions: `Are you in need of a top-notch website with a unique design and advanced features? Look no further! As a freelance web developer, I have the skills and expertise to develop your website in a professional and innovative way. I will work closely with you to understand your specific needs and requirements,.`,
-    descriptions_ar: `تحتاج إلى خدمة تطوير موقع ويب بتصميم متميز ووظائف متقدمة؟ إذاً، فأنت في المكان المناسب! كمبرمج مواقع ويب مستقل، فإنني أتمتع بالمهارات والخبرة اللازمة لتطوير موقعك الإلكتروني بطريقة احترافية وفريدة. سأعمل جنبًا إلى جنب معك لفهم احتياجاتك ومتطلباتك الخاصة، وإيجاد أفضل الحلول التقنية لتحويل رؤيتك إلى حقيقة ملموسة. `,
+    descriptions: `Are you in need of a top-notch website with a unique design and advanced features? Look no further! I have the skills and expertise to develop your website in a professional and innovative way. I will work closely with you to understand your specific needs and requirements,.`,
+    descriptions_ar: `تحتاج إلى خدمة تطوير موقع ويب بتصميم متميز ووظائف متقدمة؟ إذاً، فأنت في المكان المناسب!إنني أتمتع بالمهارات والخبرة اللازمة لتطوير موقعك الإلكتروني بطريقة احترافية وفريدة. سأعمل جنبًا إلى جنب معك لفهم احتياجاتك ومتطلباتك الخاصة، وإيجاد أفضل الحلول التقنية لتحويل رؤيتك إلى حقيقة ملموسة. `,
     delayAnimation: "0",
-  }, 
-  
+  },
+
   // خدمة 2
   {
     icon: "icon-desktop",
     title: "Web Design ",
     title_ar: "مصمم مواقع",
-    descriptions: `I can help you create a professional website that meets your needs and business requirements. I will design a website with an innovative and unique design that grabs attention and attracts visitors. I will use the latest technology and tools to ensure the best quality.`,
-    descriptions_ar: `أستطيع مساعدتك في إنشاء موقع ويب احترافي ومتميز يلبي احتياجاتك ومتطلبات عملك. سأعمل على تصميم موقع ويب بتصميم مبتكر وفريد من نوعه يلفت الانتباه ويجذب الزوار. سأستخدم أحدث التقنيات والأدوات لضمان أفضل جودة.`,
+    descriptions: `I can help you create a professional website design that meets your needs and business requirements. I will design a website with an innovative and unique design that grabs attention and attracts visitors. I will use the latest technology and tools to ensure the best quality.`,
+    descriptions_ar: `أستطيع مساعدتك في إنشاء تصميم موقع احترافي ومتميز يلبي احتياجاتك ومتطلبات عملك. سأعمل على تصميم موقع ويب مبتكر وفريد من نوعه. سأستخدم أحدث التقنيات والأدوات لضمان أفضل جودة.`,
     delayAnimation: "200",
-  }, 
-  
-  // خدمة 3
-  {
-    icon: "icon-target",
-    title: "Seo Marketing",
-    title_ar: "تحسين محركات البحث SEO",
-    descriptions: `As a freelance SEO marketer, I will work with you to improve your website's search engine ranking. I will start by analyzing your website and identifying the relevant keywords that your target audience is searching for, which will make it easier for them to find your website in search results.`,
-    descriptions_ar: `كفريلانسر مستقل في مجال التسويق الإلكتروني وتحسين محركات البحث (SEO)، سأعمل معك على تحسين مركز موقعك في نتائج محركات البحث. سأبدأ بتحليل موقعك وتحديد الكلمات الرئيسية المناسبة التي تهم جمهورك المستهدف والتي ستجعلهم يجدون موقعك بسهولة في نتائج البحث`,
-    delayAnimation: "400",
   },
-      //  تقدر تضيف خدمة اخرى عن طريق النسخ واللصق 
+
+  // خدمة 3
+  // {
+  //   icon: "icon-target",
+  //   title: "Seo Marketing",
+  //   title_ar: "تحسين محركات البحث SEO",
+  //   descriptions: `As a freelance SEO marketer, I will work with you to improve your website's search engine ranking. I will start by analyzing your website and identifying the relevant keywords that your target audience is searching for, which will make it easier for them to find your website in search results.`,
+  //   descriptions_ar: `كفريلانسر مستقل في مجال التسويق الإلكتروني وتحسين محركات البحث (SEO)، سأعمل معك على تحسين مركز موقعك في نتائج محركات البحث. سأبدأ بتحليل موقعك وتحديد الكلمات الرئيسية المناسبة التي تهم جمهورك المستهدف والتي ستجعلهم يجدون موقعك بسهولة في نتائج البحث`,
+  //   delayAnimation: "400",
+  // },
+  //  تقدر تضيف خدمة اخرى عن طريق النسخ واللصق
 ];
 
 // ----------------- End ServiceContent ----------------- //
 
-
 // ----------------- TestimonilContent ----------------- //
 // ----------------- About > Testimonil محتوى القسم الثاني  ----------------- //
-
 
 export const TestimonilContent = [
   // التوصية 1
   {
     imageName: TestimonilImg1,
-    desc: ` I recently had the pleasure of working with an incredible web designer who exceeded all my expectations..`,
-    desc_ar: `  تعاملت مع مصمم ويب محترف ومتميز بشغفه لتقديم التصميمات الفريدة والمبتكرة. كانت تجربة العمل معه ممتعة وسلسة بفضل خبرته العالية واستجابته السريعة لاحتياجاتي وتوقعاتي.`,
-    reviewerName: "Nancy Byers",
+    desc: `Excellent web developer! Ali Mohamed delivered a stunning website with a seamless user experience. Highly recommended!`,
+    desc_ar: `مطور ويب ممتاز! علي محمد ما قصّر في تطوير موقع رائع بتجربة مستخدم سلسة. أنصح فيه بشدة!`,
+    reviewerName: "Noura Abdulaziz",
     reviewerName_ar: "نورة عبد العزيز",
     delayAnimation: "0",
   },
 
-    // التوصية 2
+  // التوصية 2
   {
     imageName: TestimonilImg2,
-    desc: ` I recently had the pleasure of working with an incredible web designer who exceeded all my expectations..`,
-    desc_ar: `  تعاملت مع مصمم ويب محترف ومتميز بشغفه لتقديم التصميمات الفريدة والمبتكرة. كانت تجربة العمل معه ممتعة وسلسة بفضل خبرته العالية واستجابته السريعة لاحتياجاتي وتوقعاتي.`,
-    reviewerName: "Jara Afsari",
-    reviewerName_ar: "يوسف محمد",
+    desc: `Impressive work! Ali Mohamed created a visually appealing website that perfectly captures my brand. Quick and efficient service!`,
+    desc_ar: `شغل رهيب واحترافي! علي محمد عمل موقع جذاب يعكس تمامًا هويتي. تواصل سريع وجودة عالية!`,
+    reviewerName: "Yusef Al-Rashidi",
+    reviewerName_ar: "يوسف الرشيدي",
     delayAnimation: "200",
   },
 
-    // التوصية 3
+  // التوصية 3
   {
     imageName: TestimonilImg3,
-    desc: ` I recently had the pleasure of working with an incredible web designer who exceeded all my expectations..`,
-    desc_ar: `  تعاملت مع مصمم ويب محترف ومتميز بشغفه لتقديم التصميمات الفريدة والمبتكرة. كانت تجربة العمل معه ممتعة وسلسة بفضل خبرته العالية واستجابته السريعة لاحتياجاتي وتوقعاتي.`,
-    reviewerName: "Janiaya kiaram",
-    reviewerName_ar: "أحمد خالد",
+    desc: `Extremely satisfied! Ali Mohammed is a professional web developer who exceeded my expectations. His excellent communication and timely delivery were outstanding.`,
+    desc_ar: `مرتاح تمامًا! علي محمد مطور مواقع متميز وقدم خدمة تجاوزت توقعاتي. تعامله الراقي وتسليمه في الوقت المحدد كانا ممتازين.
+    `,
+    reviewerName: "Ahmed Ibrahim Al-Harbi",
+    reviewerName_ar: "أحمد إبراهيم الحربي",
     delayAnimation: "400",
   },
 
-    //  تقدر تضيف توصية اخرى عن طريق النسخ واللصق 
+  //  تقدر تضيف توصية اخرى عن طريق النسخ واللصق
 ];
 
 // ----------------- End TestimonilContent ----------------- //
-
 
 // ----------------- AwardContnet ----------------- //
 // ----------------- About > Award محتوى القسم الثاني  ----------------- //
@@ -185,7 +173,7 @@ export const TestimonilContent = [
 export const AwardContnet = [
   // الجائزة 1
   {
-    img:  AwardImg1,
+    img: AwardImg1,
     awardName: "Creative Designer",
     awardName_ar: "مصمم مبدع",
     awardFor: "Site of the day",
@@ -193,9 +181,9 @@ export const AwardContnet = [
     delayAnimation: "0",
   },
 
-    // الجائزة 2
+  // الجائزة 2
   {
-    img:  AwardImg2,
+    img: AwardImg2,
     awardName: "Yearly Best Performer",
     awardName_ar: "أفضل أداء سنوي",
     awardFor: "Site of the day",
@@ -203,16 +191,16 @@ export const AwardContnet = [
     delayAnimation: "200",
   },
 
-    // الجائزة 3
+  // الجائزة 3
   {
-    img:  AwardImg3,
+    img: AwardImg3,
     awardName: "Best Learner Award",
     awardName_ar: "جائزة أفضل متعلم",
     awardFor: "Site of the day",
     awardFor_ar: "موقع اليوم",
     delayAnimation: "400",
   },
-      //  تقدر تضيف جائزة اخرى عن طريق النسخ واللصق 
+  //  تقدر تضيف جائزة اخرى عن طريق النسخ واللصق
 ];
 
 // ----------------- End AwardContnet ----------------- //
@@ -223,11 +211,10 @@ export const AwardContnet = [
 // ----------------- resumeContent محتوى القسم الثالث  ----------------- //
 
 export const resumeContent = [
-
   // الخبرة 1
   {
-    jobPosition: `Sr. Front-end Engineer`,
-    jobPosition_ar: `مهندس الواجهة الأمامية للويب `,
+    jobPosition: `Front-end Dev`,
+    jobPosition_ar: `مطور الواجهة الأمامية للويب `,
     jobType: `Google | Remote`,
     jobType_ar: `Google | Remote`,
     jobDuration: `Feb 2021 - Present`,
@@ -241,7 +228,7 @@ export const resumeContent = [
     delayAnimation: "",
   },
 
-    // الخبرة 2
+  // الخبرة 2
   {
     jobPosition: `Sr. Front-end Engineer`,
     jobPosition_ar: `مهندس الواجهة الأمامية للويب `,
@@ -258,7 +245,7 @@ export const resumeContent = [
     delayAnimation: "100",
   },
 
-    // الخبرة 3
+  // الخبرة 3
   {
     jobPosition: `Sr. Front-end Engineer`,
     jobPosition_ar: `مهندس الواجهة الأمامية للويب `,
@@ -275,14 +262,12 @@ export const resumeContent = [
     delayAnimation: "200",
   },
 
-      //  تقدر تضيف خبرة اخرى عن طريق النسخ واللصق 
+  //  تقدر تضيف خبرة اخرى عن طريق النسخ واللصق
 ];
-
 
 // -----------------  educatonContent محتوى القسم الثالث  ----------------- //
 
 export const educatonContent = [
-
   // شهادة 1
   {
     passingYear: "2018-2020",
@@ -310,7 +295,7 @@ export const educatonContent = [
     instituteName_ar: "جامعة عبدالعزيز",
   },
 
-      //  تقدر تضيف شهادة اخرى عن طريق النسخ واللصق 
+  //  تقدر تضيف شهادة اخرى عن طريق النسخ واللصق
 ];
 
 // ----------------- End resumeContent & educatonContent ----------------- //
@@ -321,30 +306,42 @@ export const educatonContent = [
 export const skillContent = [
   {
     name: "HTML5", // اسم المهارة
-    numberPercent: "92", // نسبة اتقان المهارة
+    numberPercent: "99", // نسبة اتقان المهارة
     startCount: "0",
-    endCount: "92", // نسبة اتقان المهارة 
+    endCount: "99", // نسبة اتقان المهارة
+  },
+  {
+    name: "CSS", // اسم المهارة
+    numberPercent: "98", // نسبة اتقان المهارة
+    startCount: "0",
+    endCount: "98", // نسبة اتقان المهارة
+  },
+  {
+    name: "SCSS & SASS", // اسم المهارة
+    numberPercent: "97", // نسبة اتقان المهارة
+    startCount: "0",
+    endCount: "97", // نسبة اتقان المهارة
   },
   {
     name: "React JS", // اسم المهارة
-    numberPercent: "31", // نسبة اتقان المهارة
-    startCount: "0",
-    endCount: "31", // نسبة اتقان المهارة 
-  },
-  {
-    name: "Vue Js", // اسم المهارة
     numberPercent: "90", // نسبة اتقان المهارة
     startCount: "0",
-    endCount: "90", // نسبة اتقان المهارة 
+    endCount: "90", // نسبة اتقان المهارة
   },
   {
-    name: "Ui/Ux", // اسم المهارة
-    numberPercent: "88", // نسبة اتقان المهارة
+    name: "JS", // اسم المهارة
+    numberPercent: "95", // نسبة اتقان المهارة
     startCount: "0",
-    endCount: "88", // نسبة اتقان المهارة 
+    endCount: "95", // نسبة اتقان المهارة
+  },
+  {
+    name: "UI/UX", // اسم المهارة
+    numberPercent: "96", // نسبة اتقان المهارة
+    startCount: "0",
+    endCount: "96", // نسبة اتقان المهارة
   },
 
-      //  تقدر تضيف مهارة اخرى عن طريق النسخ واللصق 
+  //  تقدر تضيف مهارة اخرى عن طريق النسخ واللصق
 ];
 
 // ----------------- End skillContent ----------------- //
@@ -353,9 +350,9 @@ export const skillContent = [
 // -----------------  contactInfo  محتوى القسم الخامس  ----------------- //
 
 export const contactInfo = {
-  address: " Riyadh Al Batha Dist. Al Batha Dist",
-  email: " support@domain.com",
-  phone: "+966 1 2863547",
+  address: "KSA Jeddah",
+  email: "aliidevss@gmail.com",
+  phone: "+966 502773031",
 };
 
 // ----------------- End contactInfo ----------------- //

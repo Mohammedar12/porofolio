@@ -6,7 +6,7 @@ export default function Service() {
   const { t ,i18n } = useTranslation();
   return (
     <>
-      <div className="row">
+      <div className="row justify-content-center">
         {ServiceContent.map((val, i) => (
           <div className="col-md-6 col-lg-4 my-3" key={i} 
           data-aos="fade-right"
