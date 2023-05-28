@@ -6,11 +6,13 @@ import Testimonials from "./Testimonials/Testimonials";
 import about from "../../assets/about-me-2.jpg";
 import border from "../../assets/border.png";
 import TextTransition, { presets } from "react-text-transition";
-import { jobs , CV} from "../../data/data";
+import { jobs, CV } from "../../data/data";
+import { useTranslation } from "react-i18next";
 
-function Cv({index}) {
+function Cv({ index }) {
+  const { t, i18n } = useTranslation();
   return (
-    <section id="Cv" className="section  dark-bg">
+    <section id="Cv" className="section  dark-bg" dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-md-6 col-lg-4">
@@ -30,7 +32,9 @@ function Cv({index}) {
                     {jobs[index % jobs.length]}
                   </TextTransition>
                 </p>
-                <h3 className="text-light">{CV.name}</h3>
+                <h3 className="text-light">
+                  {i18n.language === "ar" ? CV.name_ar : CV.name}
+                </h3>
               </div>
               {/* End info */}
             </div>
@@ -39,42 +43,60 @@ function Cv({index}) {
           {/* End col */}
 
           <div className="col-lg-7 ml-auto ">
-          <div className="about-info">
+            <div className="about-info">
               <div className="title">
-                <h3>Biography</h3>
+              <h3>{t("Biography")}</h3>
               </div>
               <div className="about-text text-light">
                 <p>
-                {CV.about_1}
+                  {i18n.language === "ar"
+                    ? CV.description_1_ar
+                    : CV.description_1}
                 </p>
                 <p>
-                {CV.about_2}
+                  {i18n.language === "ar"
+                    ? CV.description_2_ar
+                    : CV.description_2}
                 </p>
               </div>
               <div className="info-list">
                 <div className="row">
                   <div className="col-sm-6 ">
-                    <ul className='text-light' >
+                    <ul className="text-light">
                       <li>
-                        <label>Name: </label>
-                        <span>{CV.name}</span>
+                        <label>{t("Name")} : </label>
+                        <span>
+                          {" "}
+                          {i18n.language === "ar" ? CV.name_ar : CV.name}
+                        </span>
                       </li>
                       <li>
-                        <label>Birthday: </label>
-                        <span>{CV.birthday}</span>
+                        <label>{t("Birthday")} : </label>
+                        <span>
+                          {" "}
+                          {i18n.language === "ar"
+                            ? CV.birthday_ar
+                            : CV.birthday}
+                        </span>
                       </li>
                       <li>
-                        <label>Age: </label>
-                        <span>{CV.age}</span>
+                        <label>{t("Age")} : </label>
+                        <span>
+                          {" "}
+                          {i18n.language === "ar" ? CV.age_ar : CV.age}
+                        </span>
                       </li>
                       <li>
-                        <label>Address: </label>
-                        <span>{CV.address}</span>
+                        <label>{t("Address")} : </label>
+                        <span>
+                          {" "}
+                          {i18n.language === "ar" ? CV.address_ar : CV.address}
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div className="col-sm-6">
-                    <ul  className='text-light'>
+                    <ul className="text-light">
                       <li>
                         <label>Phone: </label>
                         <span>{CV.phone}</span>
@@ -84,8 +106,13 @@ function Cv({index}) {
                         <span>{CV.email}</span>
                       </li>
                       <li>
-                        <label>Freelance: </label>
-                        <span>{CV.freelance}</span>
+                        <label>{t("Freelance")} : </label>
+                        <span>
+                          {" "}
+                          {i18n.language === "ar"
+                            ? CV.freelance_ar
+                            : CV.freelance}
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -104,23 +131,23 @@ function Cv({index}) {
         ></div>
         {/* End separated */}
         <div className="title">
-          <h3>What I do?</h3>
+          <h3>{t("What_I_do")}</h3>
         </div>
         <Service />
         {/* End .row */}
         {/* separated */}
-        <div
+        {/* <div
           className="separated"
           style={{
             backgroundImage: `url(${border})`,
           }}
-        ></div>
+        ></div> */}
         {/* End separated */}
 
-        <div className="title">
+        {/* <div className="title">
           <h3>Awards.</h3>
         </div>
-        <Awards />
+        <Awards /> */}
         {/* End Awards */}
 
         {/* separated */}
@@ -133,7 +160,7 @@ function Cv({index}) {
         {/* End separated */}
 
         <div className="title">
-          <h3>Testimonials.</h3>
+          <h3> {t("Testimonials")}</h3>
         </div>
         <Testimonials />
         {/* End Testimonaial */}

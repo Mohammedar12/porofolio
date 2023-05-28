@@ -5,10 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 // import a1 from '../../../assets/a1.png'
 // import a2 from '../../../assets/a2.png'
 // import a3 from '../../../assets/a3.png'
-
+import { useTranslation } from "react-i18next";
 import { TestimonilContent } from "../../../data/data";
 
 export default function Testimonil() {
+  const { t, i18n } = useTranslation();
   const settings = {
     dots: true,
     arrow: false,
@@ -40,18 +41,18 @@ export default function Testimonil() {
     <div className="testimonial-wrapper  dark-light ">
       <Slider {...settings}>
         {TestimonilContent.map((val, i) => (
-          <div key={i} >
+          <div key={i} dir={i18n.language === "ar" ? "rtl" : "ltr"}>
             <div className="testimonial-01 media">
               <div className="avatar">
-                <img
-                  src={val.imageName}
-                  alt="review comments"
-                ></img>
+                <img src={val.imageName} alt="review comments"></img>
               </div>
               <div className="media-body">
-                <p>{val.desc}</p>
-                <h6>{val.reviewerName}</h6>
-                <span>{val.designation}</span>
+                <p>{i18n.language === "ar" ? val.desc_ar : val.desc}</p>
+                <h6>
+                  {i18n.language === "ar"
+                    ? val.reviewerName_ar
+                    : val.reviewerName}
+                </h6>
               </div>
             </div>
           </div>
