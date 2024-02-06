@@ -37,11 +37,6 @@ const itemData = [
   },
 
   {
-    img: work9,
-    link: "https://img.freepik.com/free-photo/marketing-creative-collage-with-phone_23-2149379900.jpg?w=996&t=st=1684156777~exp=1684157377~hmac=7020b71555a7216edbe037c67fcb73fa6eb3a953870f2c4c165ae53531918d12",
-  },
-
-  {
     img: work2,
     link: "https://img.freepik.com/free-vector/abstract-landing-page-with-technology-devices_23-2148113790.jpg?w=740&t=st=1684155427~exp=1684156027~hmac=6e1d633ed47e680220c377734d8a9541e98eda749ab22ee78323cb1f3eb35cbe",
   },
@@ -110,8 +105,9 @@ function Work() {
                   />
                   <a
                     onClick={() => {
-                      setOpen(true)
-                       setIndex(i)}}
+                      setOpen(true);
+                      setIndex(i);
+                    }}
                   >
                     {t("View")}
                   </a>
